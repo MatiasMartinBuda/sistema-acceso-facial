@@ -1,0 +1,9 @@
+# Ignorar la base de datos local
+personas.db
+
+# Ignorar la carpeta con las fotos o imágenes de rostros
+data/
+
+# Ignorar archivos temporales de Python y modelos pesados si no querés subirlos
+__pycache__/
+*.xml
