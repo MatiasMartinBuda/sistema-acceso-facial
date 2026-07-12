@@ -1,0 +1,70 @@
+﻿=== TABLERO DE CONTROL: ULTIMOS 7 DIAS ===
+Metrica;Cantidad
+Total de eventos;50
+Accesos permitidos;33
+Accesos denegados;17
+
+=== ACCESOS POR CAMINO ===
+Camino;Cantidad
+A (Reconocido);47
+B (PIN Residente);2
+C (Visita);1
+
+=== HISTORIAL DETALLADO DE ACCESOS ===
+ID Log;Fecha y Hora;ID Persona;DNI Declarado;Depto Destino;Camino;Resultado;Score;Detalle
+50;2026-07-10 15:11:45;;;5A;C;denegado;;No atendió la llamada
+48;2026-07-10 15:11:06;1;33957602;;A;permitido;61.8;Reconocimiento directo
+49;2026-07-10 15:11:06;3;12435769;;A;permitido;61.6;Reconocimiento directo
+46;2026-07-10 15:11:04;1;33957602;;A;permitido;60.7;Reconocimiento directo
+47;2026-07-10 15:11:04;3;12435769;;A;permitido;61.0;Reconocimiento directo
+45;2026-07-10 15:11:03;1;33957602;;A;permitido;61.2;Reconocimiento directo
+44;2026-07-09 03:58:56;1;33957602;;A;permitido;71.2;Reconocimiento directo
+43;2026-07-09 03:58:55;1;33957602;;A;permitido;71.9;Reconocimiento directo
+42;2026-07-09 03:58:53;3;12435769;;A;permitido;73.3;Reconocimiento directo
+39;2026-07-09 03:58:50;3;12435769;;A;permitido;72.8;Reconocimiento directo
+40;2026-07-09 03:58:50;3;12435769;;A;permitido;73.5;Reconocimiento directo
+41;2026-07-09 03:58:50;3;12435769;;A;permitido;73.2;Reconocimiento directo
+38;2026-07-09 03:58:49;3;12435769;;A;permitido;72.5;Reconocimiento directo
+36;2026-07-09 03:58:48;3;12435769;;A;permitido;72.3;Reconocimiento directo
+37;2026-07-09 03:58:48;3;12435769;;A;permitido;72.3;Reconocimiento directo
+34;2026-07-09 03:58:47;3;12435769;;A;permitido;70.8;Reconocimiento directo
+35;2026-07-09 03:58:47;3;12435769;;A;permitido;71.8;Reconocimiento directo
+32;2026-07-09 03:58:46;3;12435769;;A;permitido;71.0;Reconocimiento directo
+33;2026-07-09 03:58:46;3;12435769;;A;permitido;70.2;Reconocimiento directo
+31;2026-07-09 03:58:42;3;12435769;;A;permitido;69.6;Reconocimiento directo
+30;2026-07-09 03:58:28;3;12435769;;A;permitido;73.9;Reconocimiento directo
+29;2026-07-09 03:58:14;1;33957602;;A;permitido;73.0;Reconocimiento directo
+28;2026-07-09 03:50:12;;;;A;denegado;69.9;Liveness no confirmado, latencia=0.017s
+27;2026-07-09 03:50:06;1;33957602;;A;permitido;75.7;Reconocimiento directo
+24;2026-07-09 03:50:05;1;33957602;;A;permitido;74.0;Reconocimiento directo
+25;2026-07-09 03:50:05;1;33957602;;A;permitido;76.2;Reconocimiento directo
+26;2026-07-09 03:50:05;1;33957602;;A;permitido;75.4;Reconocimiento directo
+22;2026-07-09 03:50:04;1;33957602;;A;permitido;75.5;Reconocimiento directo
+23;2026-07-09 03:50:04;1;33957602;;A;permitido;74.4;Reconocimiento directo
+21;2026-07-09 03:50:03;1;33957602;;A;permitido;74.0;Reconocimiento directo
+20;2026-07-09 03:49:58;;;;A;denegado;73.8;Liveness no confirmado, latencia=0.014s
+19;2026-07-09 03:49:45;;;;A;denegado;72.4;Liveness no confirmado, latencia=0.018s
+18;2026-07-09 03:01:22;;;;A;denegado;76.8;Liveness no confirmado, latencia=0.012s
+17;2026-07-09 03:01:18;;;;A;denegado;75.0;Liveness no confirmado, latencia=0.011s
+16;2026-07-09 03:01:10;;;;A;denegado;77.8;Liveness no confirmado, latencia=0.012s
+15;2026-07-09 03:01:05;;;;A;denegado;75.9;Liveness no confirmado, latencia=0.014s
+12;2026-07-09 03:00:59;3;12435769;;A;permitido;78.0;Reconocimiento directo
+13;2026-07-09 03:00:59;3;12435769;;A;permitido;79.2;Reconocimiento directo
+14;2026-07-09 03:00:59;3;12435769;;A;permitido;78.9;Reconocimiento directo
+11;2026-07-09 03:00:58;3;12435769;;A;permitido;78.7;Reconocimiento directo
+10;2026-07-09 02:36:11;1;;5A;B;permitido;;Validado por PIN
+9;2026-07-09 02:33:37;;;;A;denegado;0.0;Liveness no confirmado, latencia=0.0s
+8;2026-07-09 02:33:33;;;;A;denegado;0.0;Liveness no confirmado, latencia=0.0s
+7;2026-07-09 02:33:28;;;;A;denegado;0.0;Liveness no confirmado, latencia=0.0s
+6;2026-07-09 02:33:24;;;;A;denegado;0.0;Liveness no confirmado, latencia=0.0s
+5;2026-07-09 02:33:20;;;;A;denegado;0.0;Liveness no confirmado, latencia=0.0s
+4;2026-07-09 02:33:16;;;;A;denegado;0.0;Liveness no confirmado, latencia=0.0s
+3;2026-07-09 02:33:12;;;;A;denegado;0.0;Liveness no confirmado, latencia=0.0s
+2;2026-07-09 02:33:08;;;5a;B;denegado;;PIN inválido o persona en lista negra
+1;2026-07-09 02:31:33;;;;A;denegado;0.0;Liveness no confirmado, latencia=0.0s
+
+=== PERSONAS REGISTRADAS EN EL SISTEMA ===
+ID Modelo LBPH;Apellido;Nombre;Categoria;Departamento;Tipo Acceso;Lista Negra
+1;Budassi;Matias;administrador;5A;permanente;NO
+3;budassi;hugo;administrador;4a;permanente;NO
+2;sanchez;gabriela;administrador;3c;permanente;NO
