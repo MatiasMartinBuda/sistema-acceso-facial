@@ -30,7 +30,22 @@ def get_conn():
     finally:
         conn.close()
 
+def init_db():
+    with get_conn() as conn:
+        # --- NUEVA TABLA DE DEPARTAMENTOS ---
+        conn.execute("""
+        CREATE TABLE IF NOT EXISTS departamentos (
+            depto TEXT PRIMARY KEY,
+            email_propietario TEXT NOT NULL,
+            nombre_propietario TEXT
+        );
+        """)
 
+        # (Mantené las tablas existentes que ya tenías abajo...)
+        conn.execute("""
+        CREATE TABLE IF NOT EXISTS personas (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+...
 def init_db():
     with get_conn() as conn:
         conn.execute("""
@@ -152,7 +167,7 @@ def rechazos_recientes_por_depto(depto_destino, ventana_horas=24):
 
 
 def reporte_semanal():
-    """Módulo de Reportes (Sección 6): totales de la última semana."""
+    "Módulo de Reportes (Sección 6): totales de la última semana."
     limite = (datetime.datetime.now() - datetime.timedelta(days=7)).isoformat()
     with get_conn() as conn:
         total = conn.execute(
@@ -173,3 +188,24 @@ def reporte_semanal():
             "denegados": denegados,
             "por_camino": {r["camino"]: r["c"] for r in por_camino},
         }
+
+# ---------------- Departamentos y Contacto ----------------
+
+def registrar_o_actualizar_depto(depto, email, nombre_propietario=None):
+    "Guarda o actualiza el correo electrónico asignado a un departamento."
+    with get_conn() as conn:
+        conn.execute("
+            INSERT INTO departamentos (depto, email_propietario, nombre_propietario)
+            VALUES (?, ?, ?)
+            ON CONFLICT(depto) DO UPDATE SET 
+                email_propietario = excluded.email_propietario,
+                nombre_propietario = excluded.nombre_propietario
+        ", (depto, email, nombre_propietario))
+
+
+def obtener_email_depto(depto):
+    with get_conn() as conn:
+        row = conn.execute(
+            "SELECT email_propietario FROM departamentos WHERE depto = ?", (depto,)
+        ).fetchone()
+        return row["email_propietario"] if row else None
